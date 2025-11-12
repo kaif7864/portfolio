@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+/* 3D Flip Fix Classes */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+.button-tailwind::before {
+  content: "Back to Top";
+  position: absolute;
+  bottom: -20px;
+  font-size: 0px;
+  color: white;
+  transition: 0.3s;
+}
+
+.button-tailwind:hover::before {
+  bottom: unset;
+  font-size: 13px;
+  opacity: 1;
+}
