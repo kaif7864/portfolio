@@ -82,7 +82,7 @@ const ContactSection = () => {
                         initial="hidden" whileInView="visible" viewport={{ once: false }} variants={itemVariants}
                         className="lg:col-span-2 p-8 rounded-xl bg-gray-800/70 backdrop-blur-sm  shadow-2xl"
                     >
-                        <form className="space-y-6">
+                        <form className="space-y-6" action="https://formspree.io/f/xqawkvdj" method="POST">
                             <InputField label="Your Name" type="text" id="name" />
                             <InputField label="Your Email" type="email" id="email" />
                             
