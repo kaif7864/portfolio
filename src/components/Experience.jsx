@@ -32,7 +32,7 @@ const projects = [
             'User-friendly UI for farmers.',
         ],
         liveLink: '#',
-        githubLink: 'https://github.com/kaif7864',
+        githubLink: 'https://github.com/kaif7864/ai-farmer-assistant-app',
     },
     {
         title: 'Personal Portfolio (This Website)',
@@ -46,7 +46,7 @@ const projects = [
             'Live projects and resume download.',
         ],
         liveLink: '#',
-        githubLink: 'https://github.com/kaif7864',
+        githubLink: 'https://github.com/kaif7864/portfolio',
     },
     {
         title: 'E-Commerce Platform (Flipkart Clone)',
