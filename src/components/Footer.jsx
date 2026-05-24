@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react'; // Added useState & useEffect for cursor
 import { motion } from 'framer-motion'; // For animation
 import { Mail, Linkedin, Github, FileText, Send } from 'lucide-react';
-import ResumeFile from '../assets/images/kaif-cv.pdf'; // Importing the resume PDF
+import ResumeFile from '../assets/images/my_cv.pdf'; // Importing the resume PDF
 
 const Footer = () => {
 
@@ -121,10 +121,11 @@ const Footer = () => {
                         </h3>
                         <br />
                         <button
-                            class="button-tailwind group relative justify-self-center w-[30px] h-[30px] rounded-full bg-[#141414] shadow-[0_0_0_4px_rgba(180,160,255,0.25)] flex items-center justify-center cursor-pointer overflow-hidden transition-all duration-300 hover:w-[140px] hover:rounded-[50px] hover:bg-teal-400"
+                            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                            className="button-tailwind group relative justify-self-center w-[30px] h-[30px] rounded-full bg-[#141414] shadow-[0_0_0_4px_rgba(180,160,255,0.25)] flex items-center justify-center cursor-pointer overflow-hidden transition-all duration-300 hover:w-[140px] hover:rounded-[50px] hover:bg-teal-400"
                         >
                             <svg
-                                class="w-[12px] transition-all duration-300 group-hover:-translate-y-[200%]"
+                                className="w-[12px] transition-all duration-300 group-hover:-translate-y-[200%]"
                                 viewBox="0 0 384 512"
                             >
                                 <path

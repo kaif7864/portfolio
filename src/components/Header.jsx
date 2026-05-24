@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
-import ResumeFile from '../assets/images/kaif-cv.pdf'; // Importing the resume PDF
+import ResumeFile from '../assets/images/my_cv.pdf'; // Importing the resume PDF
 
 const navLinks = [
   { title: "Home", path: "/" },
@@ -78,9 +78,14 @@ const Navbar = () => {
                 {link.title}
               </a>
             ))}
-            <button className="mt-4 px-6 py-2 w-3/4 text-lg font-semibold text-gray-900 bg-teal-400 rounded-full hover:bg-teal-300 transition duration-300 shadow-lg">
+            <a
+              href={ResumeFile}
+              download="Mohd_Kaif_Resume.pdf"
+              onClick={() => setIsOpen(false)}
+              className="mt-4 px-6 py-2 w-3/4 text-center text-lg font-semibold text-gray-900 bg-teal-400 rounded-full hover:bg-teal-300 transition duration-300 shadow-lg"
+            >
               Download CV
-            </button>
+            </a>
           </nav>
         </div>
       )}
